@@ -1,3 +1,6 @@
+// Pinout as Arduino Uno, but bootloader is 57600 baud
+// might need to fiddle with upload the upload speed in
+// arduino/hardware/arduino/avr/boards.txt
 #include <limits.h>
 
 #define ANALOG_REF        A0
@@ -34,7 +37,7 @@ void setup() {
 }
 
 void loop() {
-  
+  // 360 microseconds per loop, with serial off.
   int refInt = analogRead(ANALOG_REF);
   int aInt = analogRead(ANALOG_BRIDGE_A);
   int bInt = analogRead(ANALOG_BRIDGE_B);
