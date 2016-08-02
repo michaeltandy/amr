@@ -4,4 +4,4 @@ script:
   - wget https://downloads.arduino.cc/arduino-1.6.10-linux64.tar.xz
   - tar xf arduino-1.6.10-linux64.tar.xz
   - mkdir build
-  - ./arduino-1.6.10/arduino-builder -verbose -compile -hardware "./arduino-1.6.10/hardware" -tools "./arduino-1.6.10/tools-builder" -tools "./arduino-1.6.10/hardware/tools/avr" -built-in-libraries "./arduino-1.6.10/libraries" -fqbn=arduino:avr:uno -build-path "$(pwd)/build" -warnings=all "/home/mtandy/Arduino/analogue_test_1/analogue_test_1.ino"
+  - ./arduino-1.6.10/arduino-builder -verbose -compile -hardware "./arduino-1.6.10/hardware" -tools "./arduino-1.6.10/tools-builder" -tools "./arduino-1.6.10/hardware/tools/avr" -built-in-libraries "./arduino-1.6.10/libraries" -fqbn=arduino:avr:uno -build-path "$(pwd)/build" -warnings=all analogue_test_1.ino
